@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+    <PackageReference Include="TeamCity.VSTest.TestAdapter" Version="1.0.36" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Taf.UI.PageObjects\Taf.UI.PageObjects.csproj" />
+    <ProjectReference Include="..\Taf.UI.Steps\Taf.UI.Steps.csproj" />
+    <ProjectReference Include="..\Taf.WebDriver\Taf.UI.Core.csproj" />
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <Reference Include="ApiAssembly">
+      <HintPath>d:\Repos\test_actions\DebugConsoleApp\ClassLib\bin\Debug\netcoreapp3.1\ClassLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>-->
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>
