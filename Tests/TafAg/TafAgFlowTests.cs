@@ -291,19 +291,6 @@ namespace Tests
             CheckArticleTaf(testCase, fixture.TestEnvironment);
         }
 
-        //debug to del
-        //[Fact(DisplayName = "Debug check DF - Predefined process outside and inside decision (Id=1048) test")]
-        //[Trait("Category", "CreateDF")]
-        //public void CheckFlow1048_debug()
-        //{
-        //    for (int i = 0; i < 6; i++)
-        //    {
-        //        DFTest1048();
-
-        //        LogHelper.LogInfo(log, $"cycle ={i}");
-        //    }
-        //}
-
         [Fact(DisplayName = "DF - Predefined process outside and inside decision (Id=1048) test")]
         [Trait("Category", "TafCheckFlow")]
         public void DFTest1048()
