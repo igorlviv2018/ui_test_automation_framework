@@ -47,7 +47,7 @@ namespace Tests
 
             browserSteps.OpenAppDeepLink(App.Taf);
 
-            string err = loginSteps.Login("aqa.sp.adm.prod@gmail.com");
+            string err = loginSteps.Login("aqa.adm.prod@gmail.com");
 
             Assert.True(string.IsNullOrEmpty(err), err);
 
