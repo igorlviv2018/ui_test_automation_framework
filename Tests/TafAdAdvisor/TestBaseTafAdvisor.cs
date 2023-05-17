@@ -102,7 +102,7 @@ namespace Tests
             return err;
         }
 
-        // SP Advisor (journey table and Editor)
+        // (journey table and Editor)
         public void OpenJourneyInEditor(string journeyTitle)
         {
             browserSteps.OpenAppDeepLink(App.TafAd);
