@@ -27,7 +27,7 @@ namespace Tests
 
             testCase.TestDescription = XUnitHelper.FactDisplayName();
 
-            testCase.UserLogin = "aqa.adm.ee.dev@gmail.com";
+            testCase.UserLogin = "aqa@gmail.com";
 
             testCase.ItemOriginalId = "2036";
 
@@ -63,7 +63,7 @@ namespace Tests
 
             testCase.TestDescription = XUnitHelper.FactDisplayName();
 
-            testCase.UserLogin = "aqa.sp.adm.prod@gmail.com";
+            testCase.UserLogin = "aqa@gmail.com";
 
             testCase.ItemOriginalId = "2059";
 
@@ -98,7 +98,7 @@ namespace Tests
 
             testCase.TestDescription = XUnitHelper.FactDisplayName();
 
-            testCase.UserLogin = "aqa.sp.adm.prod@gmail.com";
+            testCase.UserLogin = "aqa@gmail.com";
 
             testCase.ItemOriginalId = "2036";
 
