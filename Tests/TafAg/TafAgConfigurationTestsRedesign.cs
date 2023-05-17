@@ -88,14 +88,6 @@ namespace Tests
 
             commonSteps.OpenConfigurationTab("Dashboard settings");
 
-            //string userEmail = "aqa.profile.test@gmail.com";
-
-            //string password = SecretsHelper.GetUserPasswordByEmail(userEmail, fixture.TestEnvironment, fixture.TestUsers);
-
-            //profileMenuSteps.TrySignOut();
-            
-
-
             //Act
             err = profileMenuSteps.CheckUserNameAndEmail();
 
