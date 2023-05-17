@@ -178,52 +178,5 @@ namespace Tests
 
             LogHelper.LogTestEnd(log, string.Empty, testCase.TestDescription);
         }
-
-        [Fact(DisplayName = "Debug")]
-        public void DebugTest()
-        {
-            //Arrange
-            CreateArticleTestCase testCase = new CreateArticleTestCase();
-
-            testCase.TestDescription = XUnitHelper.FactDisplayName();
-
-            testCase.UserLogin = "aqa.sp.adm.prod@gmail.com";
-
-            testCase.ArticleOriginalId = "2036";
-
-            testCase.ArticleType = ArticleType.CustomArticle;
-
-            testCase.TargetTestType = TestType.PublishToTaf;
-
-            testCase.ArticleTestData = testDataHelper.TestDataArticle2036();
-
-            LogHelper.LogTestStart(log, testCase.TestDescription);
-
-            OpenAuthoring(testCase);
-
-            for (int i = 0; i < 25; i++)
-            {   
-                log.Info($"i={i}");
-
-                browserSteps.OpenAppDeepLink(App.TafAuth);
-
-                articleTableSteps.OpenArticle("113_test");
-
-                // to refactor
-                bool postToNews = i % 2 == 0;
-
-                PublishChannelsOptions publishChannelsOptions = locationSettingsSteps.SetTafPublishOptions(postToNewsFeed: postToNews, includeArticleInSearch: true);
-
-                string err = commonAuthoringSteps.FillArticleLocation(publishChannelsOptions);
-
-                PublishArticle();
-
-                //Thread.Sleep(1000);
-
-                browserSteps.OpenAppDeepLink(App.Taf);
-            }
-
-            LogHelper.LogTestEnd(log, string.Empty, testCase.TestDescription);
-        }
     }
 }
