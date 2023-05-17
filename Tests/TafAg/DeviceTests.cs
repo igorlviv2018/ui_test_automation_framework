@@ -141,16 +141,6 @@ namespace Tests
             Assert.True(string.IsNullOrEmpty(err), err);
         }
 
-        //to del
-        [Fact(DisplayName = "Debug Device OS can be selected test")]
-        public void DebugSelectDeviceOsOnDevicePage()
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                SelectDeviceOsOnDevicePage();
-            }
-        }
-
         //[Fact(DisplayName = "D7: Most popular devices on dashboard")]
         //public void MostPopularDevices()
         //{
