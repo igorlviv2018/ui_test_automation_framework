@@ -34,10 +34,6 @@ namespace Tests
 
             TestUsers = UserHelper.GetTestUsers();
 
-            //DbHelper = new DbHelper(Config.Config["DBConnectStr"]);
-
-            //DbHelper.OpenConnection();
-
             LogManager.Configuration = new NLogLoggingConfiguration(TestConfig.GetSection("NLog"));
 
             InitBrowser();
@@ -45,7 +41,6 @@ namespace Tests
 
         public void Dispose()
         {
-            //DbHelper.CloseConnection();
             browser.Quit();
         }
 
