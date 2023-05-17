@@ -282,8 +282,6 @@ namespace Tests
             sidebarRecentItemsSteps.OpenRandomItemsUsingDeeplink(itemsToSelect, CommonConstants.RecentItemsListDefaultCount);
 
             //Act
-            //sidebarRecentItemsSteps.OpenRandomItemFromRecentlyViewedList();
-
             err = sidebarRecentItemsSteps.CheckRandomItemCanBeOpenedFromRecentlyViewedList();
 
             //Assert
