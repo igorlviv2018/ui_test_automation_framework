@@ -52,8 +52,6 @@ namespace Taf.UI.Steps
         public void OpenContentItemViaSearch(string guideName, UiContentType contentType, string device)
         {
             string err = navigationBarSteps.Find(guideName, contentType);
-
-
         }
 
         public string CheckGuideViewMode(GuideViewType viewMode)
