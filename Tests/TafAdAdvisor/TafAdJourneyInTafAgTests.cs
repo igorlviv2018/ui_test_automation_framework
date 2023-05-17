@@ -22,7 +22,7 @@ namespace Tests
             //clientId = fixture.DbHelper.GetClientIdByName(clientName);
         }
 
-        [Fact(DisplayName = "SP Agents: journey with infinity, interval and brands parameters test")]
+        [Fact(DisplayName = "TafAg: journey with infinity, interval and brands parameters test")]
         public void JourneyWithInfinityParameterTest()
         {
             //Arrange
@@ -45,7 +45,7 @@ namespace Tests
             LogHelper.LogTestEnd(log, err, XUnitHelper.FactDisplayName());
         }
 
-        [Fact(DisplayName = "SP Agents: journey with single infinity parameter test")]
+        [Fact(DisplayName = "TafAg: journey with single infinity parameter test")]
         public void JourneyWithSingleInfinityParameterTest()
         {
             //Arrange
@@ -68,7 +68,7 @@ namespace Tests
             LogHelper.LogTestEnd(log, err, XUnitHelper.FactDisplayName());
         }
 
-        [Fact(DisplayName = "SP Agents: journey with 4 infinity parameters test")]
+        [Fact(DisplayName = "TafAg: journey with 4 infinity parameters test")]
         public void JourneyWithFourInfinityParametersTest()
         {
             //Arrange
@@ -91,7 +91,7 @@ namespace Tests
             LogHelper.LogTestEnd(log, err, XUnitHelper.FactDisplayName());
         }
 
-        [Fact(DisplayName = "SP Agents: journey with single interval parameter test")]
+        [Fact(DisplayName = "TafAg: journey with single interval parameter test")]
         public void JourneyWithSingleIntervalParameterTest()
         {
             //Arrange
@@ -114,7 +114,7 @@ namespace Tests
             LogHelper.LogTestEnd(log, err, XUnitHelper.FactDisplayName());
         }
 
-        [Fact(DisplayName = "SP Agents: journey with Brands parameter test")]
+        [Fact(DisplayName = "TafAg: journey with Brands parameter test")]
         public void JourneyWithBrandsParameterTest()
         {
             //Arrange
@@ -137,7 +137,7 @@ namespace Tests
             LogHelper.LogTestEnd(log, err, XUnitHelper.FactDisplayName());
         }
 
-        [Fact(DisplayName = "SP Agents: journey parameter table with 4 infinity parameters test")]
+        [Fact(DisplayName = "TafAg: journey parameter table with 4 infinity parameters test")]
         public void TableWithTwoParametersTest()
         {
             //Arrange
